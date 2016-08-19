@@ -30,6 +30,7 @@ def find_status_in_fb_stream_data(data):
 			fb_status['last_page'] = fb_data.json()['paging']['next']
 		except:
 			pass
+	return fb_status
 
 def get_data_from_fb_stream(url):
 	fb_data = requests.get(url)
